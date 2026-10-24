@@ -5,7 +5,11 @@ A Claude Code plugin that co-designs a custom card game with you and builds it o
 
 ## Use it
 
-1. Install it from this marketplace (see the repo README).
+1. Add this marketplace and install the plugin:
+   ```
+   /plugin marketplace add <path-or-git-url-of-this-repo>
+   /plugin install game-creator@tcg-sandbox
+   ```
 2. Create an API key on tcg-sandbox.com under **Account → API Key**. Save it to a file, never into the
    chat:
    ```bash

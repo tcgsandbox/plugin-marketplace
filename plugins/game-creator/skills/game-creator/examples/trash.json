@@ -1,0 +1,786 @@
+{
+  "name": "Trash",
+  "description": "Race to fill your spots from Ace to 10 before your opponent does. One standard deck, no decks to build.",
+  "banner": {
+    "stockSlug": "playing-cards-fan"
+  },
+  "options": {
+    "cardDisplayMode": "imageonly",
+    "cardDisplayContext": "everywhere",
+    "playerDecksEnabled": false
+  },
+  "sets": [
+    {
+      "id": "base",
+      "attributes": {
+        "rank": "string",
+        "suit": "string",
+        "color": "string"
+      },
+      "cards": [
+        {
+          "name": "Ace of Spades",
+          "attributes": {
+            "rank": "Ace",
+            "suit": "Spades",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-ace-of-spades"
+          }
+        },
+        {
+          "name": "Two of Spades",
+          "attributes": {
+            "rank": "Two",
+            "suit": "Spades",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-two-of-spades"
+          }
+        },
+        {
+          "name": "Three of Spades",
+          "attributes": {
+            "rank": "Three",
+            "suit": "Spades",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-three-of-spades"
+          }
+        },
+        {
+          "name": "Four of Spades",
+          "attributes": {
+            "rank": "Four",
+            "suit": "Spades",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-four-of-spades"
+          }
+        },
+        {
+          "name": "Five of Spades",
+          "attributes": {
+            "rank": "Five",
+            "suit": "Spades",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-five-of-spades"
+          }
+        },
+        {
+          "name": "Six of Spades",
+          "attributes": {
+            "rank": "Six",
+            "suit": "Spades",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-six-of-spades"
+          }
+        },
+        {
+          "name": "Seven of Spades",
+          "attributes": {
+            "rank": "Seven",
+            "suit": "Spades",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-seven-of-spades"
+          }
+        },
+        {
+          "name": "Eight of Spades",
+          "attributes": {
+            "rank": "Eight",
+            "suit": "Spades",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-eight-of-spades"
+          }
+        },
+        {
+          "name": "Nine of Spades",
+          "attributes": {
+            "rank": "Nine",
+            "suit": "Spades",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-nine-of-spades"
+          }
+        },
+        {
+          "name": "Ten of Spades",
+          "attributes": {
+            "rank": "Ten",
+            "suit": "Spades",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-ten-of-spades"
+          }
+        },
+        {
+          "name": "Jack of Spades",
+          "attributes": {
+            "rank": "Jack",
+            "suit": "Spades",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-jack-of-spades"
+          }
+        },
+        {
+          "name": "Queen of Spades",
+          "attributes": {
+            "rank": "Queen",
+            "suit": "Spades",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-queen-of-spades"
+          }
+        },
+        {
+          "name": "King of Spades",
+          "attributes": {
+            "rank": "King",
+            "suit": "Spades",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-king-of-spades"
+          }
+        },
+        {
+          "name": "Ace of Hearts",
+          "attributes": {
+            "rank": "Ace",
+            "suit": "Hearts",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-ace-of-hearts"
+          }
+        },
+        {
+          "name": "Two of Hearts",
+          "attributes": {
+            "rank": "Two",
+            "suit": "Hearts",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-two-of-hearts"
+          }
+        },
+        {
+          "name": "Three of Hearts",
+          "attributes": {
+            "rank": "Three",
+            "suit": "Hearts",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-three-of-hearts"
+          }
+        },
+        {
+          "name": "Four of Hearts",
+          "attributes": {
+            "rank": "Four",
+            "suit": "Hearts",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-four-of-hearts"
+          }
+        },
+        {
+          "name": "Five of Hearts",
+          "attributes": {
+            "rank": "Five",
+            "suit": "Hearts",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-five-of-hearts"
+          }
+        },
+        {
+          "name": "Six of Hearts",
+          "attributes": {
+            "rank": "Six",
+            "suit": "Hearts",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-six-of-hearts"
+          }
+        },
+        {
+          "name": "Seven of Hearts",
+          "attributes": {
+            "rank": "Seven",
+            "suit": "Hearts",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-seven-of-hearts"
+          }
+        },
+        {
+          "name": "Eight of Hearts",
+          "attributes": {
+            "rank": "Eight",
+            "suit": "Hearts",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-eight-of-hearts"
+          }
+        },
+        {
+          "name": "Nine of Hearts",
+          "attributes": {
+            "rank": "Nine",
+            "suit": "Hearts",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-nine-of-hearts"
+          }
+        },
+        {
+          "name": "Ten of Hearts",
+          "attributes": {
+            "rank": "Ten",
+            "suit": "Hearts",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-ten-of-hearts"
+          }
+        },
+        {
+          "name": "Jack of Hearts",
+          "attributes": {
+            "rank": "Jack",
+            "suit": "Hearts",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-jack-of-hearts"
+          }
+        },
+        {
+          "name": "Queen of Hearts",
+          "attributes": {
+            "rank": "Queen",
+            "suit": "Hearts",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-queen-of-hearts"
+          }
+        },
+        {
+          "name": "King of Hearts",
+          "attributes": {
+            "rank": "King",
+            "suit": "Hearts",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-king-of-hearts"
+          }
+        },
+        {
+          "name": "Ace of Diamonds",
+          "attributes": {
+            "rank": "Ace",
+            "suit": "Diamonds",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-ace-of-diamonds"
+          }
+        },
+        {
+          "name": "Two of Diamonds",
+          "attributes": {
+            "rank": "Two",
+            "suit": "Diamonds",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-two-of-diamonds"
+          }
+        },
+        {
+          "name": "Three of Diamonds",
+          "attributes": {
+            "rank": "Three",
+            "suit": "Diamonds",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-three-of-diamonds"
+          }
+        },
+        {
+          "name": "Four of Diamonds",
+          "attributes": {
+            "rank": "Four",
+            "suit": "Diamonds",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-four-of-diamonds"
+          }
+        },
+        {
+          "name": "Five of Diamonds",
+          "attributes": {
+            "rank": "Five",
+            "suit": "Diamonds",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-five-of-diamonds"
+          }
+        },
+        {
+          "name": "Six of Diamonds",
+          "attributes": {
+            "rank": "Six",
+            "suit": "Diamonds",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-six-of-diamonds"
+          }
+        },
+        {
+          "name": "Seven of Diamonds",
+          "attributes": {
+            "rank": "Seven",
+            "suit": "Diamonds",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-seven-of-diamonds"
+          }
+        },
+        {
+          "name": "Eight of Diamonds",
+          "attributes": {
+            "rank": "Eight",
+            "suit": "Diamonds",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-eight-of-diamonds"
+          }
+        },
+        {
+          "name": "Nine of Diamonds",
+          "attributes": {
+            "rank": "Nine",
+            "suit": "Diamonds",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-nine-of-diamonds"
+          }
+        },
+        {
+          "name": "Ten of Diamonds",
+          "attributes": {
+            "rank": "Ten",
+            "suit": "Diamonds",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-ten-of-diamonds"
+          }
+        },
+        {
+          "name": "Jack of Diamonds",
+          "attributes": {
+            "rank": "Jack",
+            "suit": "Diamonds",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-jack-of-diamonds"
+          }
+        },
+        {
+          "name": "Queen of Diamonds",
+          "attributes": {
+            "rank": "Queen",
+            "suit": "Diamonds",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-queen-of-diamonds"
+          }
+        },
+        {
+          "name": "King of Diamonds",
+          "attributes": {
+            "rank": "King",
+            "suit": "Diamonds",
+            "color": "Red"
+          },
+          "image": {
+            "stockSlug": "playing-card-king-of-diamonds"
+          }
+        },
+        {
+          "name": "Ace of Clubs",
+          "attributes": {
+            "rank": "Ace",
+            "suit": "Clubs",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-ace-of-clubs"
+          }
+        },
+        {
+          "name": "Two of Clubs",
+          "attributes": {
+            "rank": "Two",
+            "suit": "Clubs",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-two-of-clubs"
+          }
+        },
+        {
+          "name": "Three of Clubs",
+          "attributes": {
+            "rank": "Three",
+            "suit": "Clubs",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-three-of-clubs"
+          }
+        },
+        {
+          "name": "Four of Clubs",
+          "attributes": {
+            "rank": "Four",
+            "suit": "Clubs",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-four-of-clubs"
+          }
+        },
+        {
+          "name": "Five of Clubs",
+          "attributes": {
+            "rank": "Five",
+            "suit": "Clubs",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-five-of-clubs"
+          }
+        },
+        {
+          "name": "Six of Clubs",
+          "attributes": {
+            "rank": "Six",
+            "suit": "Clubs",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-six-of-clubs"
+          }
+        },
+        {
+          "name": "Seven of Clubs",
+          "attributes": {
+            "rank": "Seven",
+            "suit": "Clubs",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-seven-of-clubs"
+          }
+        },
+        {
+          "name": "Eight of Clubs",
+          "attributes": {
+            "rank": "Eight",
+            "suit": "Clubs",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-eight-of-clubs"
+          }
+        },
+        {
+          "name": "Nine of Clubs",
+          "attributes": {
+            "rank": "Nine",
+            "suit": "Clubs",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-nine-of-clubs"
+          }
+        },
+        {
+          "name": "Ten of Clubs",
+          "attributes": {
+            "rank": "Ten",
+            "suit": "Clubs",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-ten-of-clubs"
+          }
+        },
+        {
+          "name": "Jack of Clubs",
+          "attributes": {
+            "rank": "Jack",
+            "suit": "Clubs",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-jack-of-clubs"
+          }
+        },
+        {
+          "name": "Queen of Clubs",
+          "attributes": {
+            "rank": "Queen",
+            "suit": "Clubs",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-queen-of-clubs"
+          }
+        },
+        {
+          "name": "King of Clubs",
+          "attributes": {
+            "rank": "King",
+            "suit": "Clubs",
+            "color": "Black"
+          },
+          "image": {
+            "stockSlug": "playing-card-king-of-clubs"
+          }
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "file": "trash.rules.md"
+  },
+  "board": {
+    "playerCount": 2,
+    "slots": [
+      {
+        "name": "A",
+        "row": 0,
+        "column": 0,
+        "maxCount": 1,
+        "playerOwner": 1
+      },
+      {
+        "name": "2",
+        "row": 0,
+        "column": 1,
+        "maxCount": 1,
+        "playerOwner": 1
+      },
+      {
+        "name": "3",
+        "row": 0,
+        "column": 2,
+        "maxCount": 1,
+        "playerOwner": 1
+      },
+      {
+        "name": "4",
+        "row": 0,
+        "column": 3,
+        "maxCount": 1,
+        "playerOwner": 1
+      },
+      {
+        "name": "5",
+        "row": 0,
+        "column": 4,
+        "maxCount": 1,
+        "playerOwner": 1
+      },
+      {
+        "name": "6",
+        "row": 1,
+        "column": 0,
+        "maxCount": 1,
+        "playerOwner": 1
+      },
+      {
+        "name": "7",
+        "row": 1,
+        "column": 1,
+        "maxCount": 1,
+        "playerOwner": 1
+      },
+      {
+        "name": "8",
+        "row": 1,
+        "column": 2,
+        "maxCount": 1,
+        "playerOwner": 1
+      },
+      {
+        "name": "9",
+        "row": 1,
+        "column": 3,
+        "maxCount": 1,
+        "playerOwner": 1
+      },
+      {
+        "name": "10",
+        "row": 1,
+        "column": 4,
+        "maxCount": 1,
+        "playerOwner": 1
+      },
+      {
+        "name": "P1 face-down",
+        "row": 0,
+        "column": 5,
+        "height": 2,
+        "maxCount": 10,
+        "visibility": "private"
+      },
+      {
+        "name": "Draw pile",
+        "row": 2,
+        "column": 1,
+        "width": 2,
+        "height": 2,
+        "type": "preset_cards",
+        "visibility": "private",
+        "presetCards": {
+          "mode": "shuffled",
+          "cards": [
+            {
+              "set": "base"
+            }
+          ],
+          "topCardVisible": false
+        }
+      },
+      {
+        "name": "Discard pile",
+        "row": 2,
+        "column": 3,
+        "width": 2,
+        "height": 2,
+        "maxCount": 52
+      },
+      {
+        "name": "A",
+        "row": 4,
+        "column": 0,
+        "maxCount": 1,
+        "playerOwner": 2
+      },
+      {
+        "name": "2",
+        "row": 4,
+        "column": 1,
+        "maxCount": 1,
+        "playerOwner": 2
+      },
+      {
+        "name": "3",
+        "row": 4,
+        "column": 2,
+        "maxCount": 1,
+        "playerOwner": 2
+      },
+      {
+        "name": "4",
+        "row": 4,
+        "column": 3,
+        "maxCount": 1,
+        "playerOwner": 2
+      },
+      {
+        "name": "5",
+        "row": 4,
+        "column": 4,
+        "maxCount": 1,
+        "playerOwner": 2
+      },
+      {
+        "name": "6",
+        "row": 5,
+        "column": 0,
+        "maxCount": 1,
+        "playerOwner": 2
+      },
+      {
+        "name": "7",
+        "row": 5,
+        "column": 1,
+        "maxCount": 1,
+        "playerOwner": 2
+      },
+      {
+        "name": "8",
+        "row": 5,
+        "column": 2,
+        "maxCount": 1,
+        "playerOwner": 2
+      },
+      {
+        "name": "9",
+        "row": 5,
+        "column": 3,
+        "maxCount": 1,
+        "playerOwner": 2
+      },
+      {
+        "name": "10",
+        "row": 5,
+        "column": 4,
+        "maxCount": 1,
+        "playerOwner": 2
+      },
+      {
+        "name": "P2 face-down",
+        "row": 4,
+        "column": 5,
+        "height": 2,
+        "maxCount": 10,
+        "visibility": "private"
+      }
+    ]
+  }
+}

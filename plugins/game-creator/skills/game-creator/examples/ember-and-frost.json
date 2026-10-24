@@ -1,0 +1,68 @@
+{
+  "name": "Ember and Frost",
+  "description": "A fast two-player duel between a fire mage's horde and a frost wizard's guardians. Summon creatures, sling spells, and bring your rival's life to zero.",
+  "banner": { "stockSlug": "tcg-sandbox-icon" },
+  "options": { "cardDisplayMode": "managed", "cardDisplayContext": "everywhere" },
+  "sets": [
+    {
+      "id": "base",
+      "attributes": { "cost": "number", "type": "string", "element": "string", "power": "number", "health": "number" },
+      "cards": [
+        { "name": "Ember Imp", "description": "Quick and cheap.", "attributes": { "cost": 1, "type": "Creature", "element": "Fire", "power": 1, "health": 1 }, "image": { "stockSlug": "goblin" } },
+        { "name": "Cinder Archer", "description": "When it enters, deal 1 damage to any creature.", "attributes": { "cost": 2, "type": "Creature", "element": "Fire", "power": 2, "health": 1 }, "image": { "stockSlug": "archer" } },
+        { "name": "Blazing Minotaur", "description": "Must attack each turn if able.", "attributes": { "cost": 4, "type": "Creature", "element": "Fire", "power": 5, "health": 3 }, "image": { "stockSlug": "minotaur" } },
+        { "name": "Phoenix", "description": "When it dies, return it to your hand at the end of the turn.", "attributes": { "cost": 5, "type": "Creature", "element": "Fire", "power": 4, "health": 3 }, "image": { "stockSlug": "phoenix" } },
+        { "name": "Fireball", "description": "Deal 3 damage to a creature or player.", "attributes": { "cost": 3, "type": "Spell", "element": "Fire", "power": 3, "health": 0 }, "image": { "stockSlug": "fire" } },
+        { "name": "Explosion", "description": "Deal 2 damage to every creature.", "attributes": { "cost": 4, "type": "Spell", "element": "Fire", "power": 2, "health": 0 }, "image": { "stockSlug": "explosion" } },
+        { "name": "Frost Sentinel", "description": "Can block two attackers each turn.", "attributes": { "cost": 2, "type": "Creature", "element": "Frost", "power": 1, "health": 4 }, "image": { "stockSlug": "warrior" } },
+        { "name": "Ice Golem", "description": "Takes 1 less damage from every source.", "attributes": { "cost": 4, "type": "Creature", "element": "Frost", "power": 3, "health": 6 }, "image": { "stockSlug": "golem" } },
+        { "name": "Frost Wizard", "description": "At the start of your turn, freeze an enemy creature: it can't attack this turn.", "attributes": { "cost": 3, "type": "Creature", "element": "Frost", "power": 2, "health": 3 }, "image": { "stockSlug": "wizard" } },
+        { "name": "Griffin Rider", "description": "Can't be blocked by creatures with cost 2 or less.", "attributes": { "cost": 5, "type": "Creature", "element": "Frost", "power": 4, "health": 4 }, "image": { "stockSlug": "griffin" } },
+        { "name": "Ice Shard", "description": "Deal 2 damage to a creature and freeze it.", "attributes": { "cost": 2, "type": "Spell", "element": "Frost", "power": 2, "health": 0 }, "image": { "stockSlug": "ice" } },
+        { "name": "Winter Gale", "description": "Return an enemy creature to its owner's hand.", "attributes": { "cost": 3, "type": "Spell", "element": "Frost", "power": 0, "health": 0 }, "image": { "stockSlug": "wind" } },
+        { "name": "Healing Potion", "description": "Gain 4 Life.", "attributes": { "cost": 1, "type": "Spell", "element": "Neutral", "power": 0, "health": 4 }, "image": { "stockSlug": "potion-01" } },
+        { "name": "Wooden Shield", "description": "Item. Your creatures get +0/+1.", "attributes": { "cost": 2, "type": "Item", "element": "Neutral", "power": 0, "health": 1 }, "image": { "stockSlug": "shield" } },
+        { "name": "Mana Crystal", "description": "Item. You have 1 extra energy each turn.", "attributes": { "cost": 3, "type": "Item", "element": "Neutral", "power": 0, "health": 0 }, "image": { "stockSlug": "crystal-01" } }
+      ]
+    }
+  ],
+  "rules": { "file": "ember-and-frost.rules.md" },
+  "board": {
+    "playerCount": 2,
+    "slots": [
+      { "name": "Life", "row": 0, "column": 0, "type": "counters", "maxCount": 1, "playerOwner": 1 },
+      { "name": "Support", "row": 0, "column": 1, "width": 3, "maxCount": 4, "playerOwner": 1 },
+      { "name": "Energy", "row": 0, "column": 4, "type": "counters", "maxCount": 1, "playerOwner": 1 },
+      { "name": "Graveyard", "row": 0, "column": 5, "maxCount": 40, "playerOwner": 1 },
+      { "name": "Battlefield", "row": 1, "column": 0, "width": 6, "maxCount": 6, "playerOwner": 1 },
+      { "name": "Stack", "row": 2, "column": 1, "width": 4, "height": 2, "maxCount": 5 },
+      { "name": "Battlefield", "row": 4, "column": 0, "width": 6, "maxCount": 6, "playerOwner": 2 },
+      { "name": "Life", "row": 5, "column": 0, "type": "counters", "maxCount": 1, "playerOwner": 2 },
+      { "name": "Support", "row": 5, "column": 1, "width": 3, "maxCount": 4, "playerOwner": 2 },
+      { "name": "Energy", "row": 5, "column": 4, "type": "counters", "maxCount": 1, "playerOwner": 2 },
+      { "name": "Graveyard", "row": 5, "column": 5, "maxCount": 40, "playerOwner": 2 }
+    ]
+  },
+  "premadeDecks": [
+    {
+      "displayName": "Ember Starter",
+      "description": "Go wide early and burn the rest.",
+      "cards": [
+        { "card": "Ember Imp", "quantity": 4 }, { "card": "Cinder Archer", "quantity": 3 },
+        { "card": "Blazing Minotaur", "quantity": 2 }, { "card": "Phoenix", "quantity": 1 },
+        { "card": "Fireball", "quantity": 3 }, { "card": "Explosion", "quantity": 2 },
+        { "card": "Healing Potion", "quantity": 2 }, { "card": "Mana Crystal", "quantity": 1 }
+      ]
+    },
+    {
+      "displayName": "Frost Starter",
+      "description": "Hold the line, then win in the air.",
+      "cards": [
+        { "card": "Frost Sentinel", "quantity": 4 }, { "card": "Frost Wizard", "quantity": 3 },
+        { "card": "Ice Golem", "quantity": 2 }, { "card": "Griffin Rider", "quantity": 2 },
+        { "card": "Ice Shard", "quantity": 3 }, { "card": "Winter Gale", "quantity": 2 },
+        { "card": "Wooden Shield", "quantity": 1 }, { "card": "Healing Potion", "quantity": 1 }
+      ]
+    }
+  ]
+}

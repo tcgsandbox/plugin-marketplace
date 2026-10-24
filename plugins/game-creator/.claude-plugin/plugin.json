@@ -1,0 +1,11 @@
+{
+  "name": "game-creator",
+  "version": "0.1.0",
+  "description": "Design and publish your own custom trading card game on TCG Sandbox (tcg-sandbox.com): theme, card attributes, cards and art, board layout, rules, and premade decks, built straight through the API.",
+  "author": {
+    "name": "bradlet",
+    "email": "mail@bradlet.com"
+  },
+  "homepage": "https://tcg-sandbox.com",
+  "keywords": ["tcg", "card-game", "game-design", "tcg-sandbox"]
+}

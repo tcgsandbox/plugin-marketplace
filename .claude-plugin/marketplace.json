@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "tcg-sandbox",
+  "description": "Claude Code plugins for TCG Sandbox (tcg-sandbox.com), the platform for designing and playing custom card games.",
+  "owner": {
+    "name": "bradlet",
+    "email": "mail@bradlet.com"
+  },
+  "plugins": [
+    {
+      "name": "game-creator",
+      "description": "Design and publish your own custom trading card game on TCG Sandbox with Claude: theme, card attributes, cards and art, board layout, rules, and premade decks, built straight through the API.",
+      "author": { "name": "bradlet" },
+      "category": "productivity",
+      "source": "./plugins/game-creator"
+    }
+  ]
+}

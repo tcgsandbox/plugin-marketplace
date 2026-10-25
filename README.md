@@ -10,7 +10,7 @@ custom card games in the browser.
 ## Install
 
 ```
-/plugin marketplace add <path-or-git-url-of-this-repo>
+/plugin marketplace add tcgsandbox/plugin-marketplace
 /plugin install game-creator@tcg-sandbox
 ```
 

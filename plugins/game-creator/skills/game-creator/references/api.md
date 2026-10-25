@@ -7,7 +7,7 @@
 ## Auth
 
 Writes need `Authorization: Bearer <credential>`. The user creates an **API key** on tcg-sandbox.com
-under **Account → API Key**. It starts with `tcg_` and expires. **Never ask the user to paste the key
+under **Account → API Key** (creating one needs the subscriber plan). It starts with `tcg_` and expires. **Never ask the user to paste the key
 into the chat.** Have them save it to a file and point the scripts at it:
 
 ```bash

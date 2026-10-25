@@ -39,10 +39,10 @@ flowchart LR
 ```
 
 1. **Interview.** Ask a few bundled questions with defaults: theme, player count, game shape, win
-   condition, and whether they're on the free tier. See `references/design-playbook.md`.
+   condition, and whether they have their own art. See `references/design-playbook.md`.
 2. **Design doc.** Present the pitch, turn loop, attribute schema, card list, board grid, decks and art
    plan. Get the user's approval before you write the spec.
-3. **Art.** Choose from the free stock library; free users can't upload art. Run
+3. **Art.** Start from the free stock library unless the user brings their own art. Run
    `node scripts/stock-images.mjs suggest <spec.json>` to get candidates. Run `list --q` or
    `list --category` to browse. Run `fetch` and **look at** the PNGs before deciding. Let the user
    choose where taste matters, especially the banner.
@@ -57,7 +57,8 @@ flowchart LR
 
 ## Credentials
 
-Writes need the user's API key from tcg-sandbox.com → **Account → API Key**.
+Writes need the user's API key from tcg-sandbox.com → **Account → API Key**. Creating a key needs the
+$5/month subscriber plan (**Account → Billing**), so a user without one must subscribe first.
 
 - **Never ask for the key in chat, and never print it.** Have the user save it to a file, for example
   `pbpaste > ~/.tcg-sandbox-key && chmod 600 ~/.tcg-sandbox-key`, and point
@@ -78,8 +79,10 @@ Writes need the user's API key from tcg-sandbox.com → **Account → API Key**.
   - Players bring their own decks: keep player decks on and ship premade starter decks.
   - Everyone plays from shared cards: set `playerDecksEnabled: false` and use a `preset_cards` pile.
 - **Quantities live in decks and presets, not on cards.** Make one card per distinct card.
-- **Respect the free tier.** Free users get 1 game, 1 premade deck per game, stock art only, and no
-  `imageonly`. A 402 names the limit; explain it and adapt rather than retrying.
+- **Expect a subscriber.** Only subscribers can create a key, so assume unlimited games and decks, art
+  uploads and `imageonly`. A key outlives a cancelled subscription until it expires, so the free limits
+  (1 game, 1 premade deck per game, stock art only, no `imageonly`) can still apply. A 402 names the
+  limit; explain it and adapt rather than retrying.
 - **Game names** may only use letters, digits, spaces, `-`, `_`, `$` and `@`.
 - **Confirm before anything irreversible or public**: building, deleting a game (`DELETE /games/<id>`
   removes everything), or overwriting rules and boards.

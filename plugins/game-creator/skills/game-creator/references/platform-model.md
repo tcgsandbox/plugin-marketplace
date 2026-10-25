@@ -135,6 +135,10 @@ standard 52-card deck in a `preset_cards` slot.
 | Upload card or banner art | no (stock art only) | yes |
 | Switch a game to `imageonly` | no | yes |
 | In-app AI design assistant | no | yes |
+| Create an API key (needed to build with this skill) | no | yes |
+
+Building needs an API key, so the user is normally a subscriber. The free column still matters for a
+key that outlived a cancelled subscription: it keeps working until it expires, under free limits.
 
 A request over a limit returns **402** with a body naming the quota or feature. When that happens, tell
 the user plainly what limit they hit and what the alternative is. Don't retry.

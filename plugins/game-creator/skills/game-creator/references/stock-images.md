@@ -1,8 +1,9 @@
 # Choosing stock art
 
 TCG Sandbox has a curated library of **free stock images** that every user can put on cards and
-banners, including free-tier users. Uploading your own art needs a subscription. So for most users stock
-art is the only art, and choosing it well does much of the work of making a game feel finished.
+banners. Uploading your own art needs a subscription, which building through the API already requires,
+but most users won't have art for every card. Stock art is the fast default, and choosing it well does
+much of the work of making a game feel finished.
 
 ## What's in the library
 
@@ -73,6 +74,6 @@ checks that every slug exists.
 
 - A subscriber can upload their own art: `image: { "file": "art/x.png" }` in the spec, or
   `cardImage` / `bannerImage` data URLs in the API.
-- A free user picks the closest stock image. Make up for it with a good card name and description,
+- Otherwise, pick the closest stock image. Make up for it with a good card name and description,
   which `managed` display shows prominently.
 - Note gaps in the library for the user. The library is curated by hand and grows over time.

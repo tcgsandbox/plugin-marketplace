@@ -16,8 +16,8 @@ can sketch the game.
   - a shared-deck card game (like Kings Corner)?
   - a tableau, drafting or racing game?
 - **Win condition**: reduce life to zero, reach a score, empty your hand, complete a set…
-- **Their account**: free or subscriber? This decides whether custom art, `imageonly` display and more
-  than one game are possible. If you're unsure, design for free.
+- **Art**: do they have their own art, or should you pick from the stock library? Building needs an API
+  key, which only subscribers can create, so uploads and `imageonly` display are normally available.
 - **Existing material**: names, a card list, art, rules they've already written?
 
 ## 2. Design document (show it before building)
@@ -38,7 +38,7 @@ Write a compact plan for the user to approve:
    - Expansions can come later as separate sets.
 5. **Board**: a grid table (see `board-design.md`) with the deck model and why.
 6. **Decks**: for TCGs, 1–2 **premade starter decks** of 20–30 cards each (quantities 1–4), each with a
-   clear strategy, so people can play right away. Free tier allows 1 premade deck per game.
+   clear strategy, so people can play right away.
 7. **Art plan**: the banner plus art for each card, chosen from the live stock library (see
    `stock-images.md`).
 
